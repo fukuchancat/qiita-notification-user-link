@@ -22,10 +22,10 @@ const handleAuxclick = e => {
 
 // マウスホバーで下線を表示するメソッド
 const handleMouseover = e => {
-    e.target.style.textDecoration = "underline"
+    e.target.style.textDecoration = "underline";
 };
 const handleMouseout = e => {
-    e.target.style.textDecoration = "unset"
+    e.target.style.textDecoration = "unset";
 };
 
 // 通知内にあるユーザ名またはアイコンの要素一覧を取得
