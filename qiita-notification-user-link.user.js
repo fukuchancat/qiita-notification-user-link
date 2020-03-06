@@ -21,8 +21,12 @@ const handleAuxclick = e => {
 };
 
 // マウスホバーで下線を表示するメソッド
-const handleMouseover = e => (e.target.style.textDecoration = "underline");
-const handleMouseout = e => (e.target.style.textDecoration = "unset");
+const handleMouseover = e => {
+    e.target.style.textDecoration = "underline"
+};
+const handleMouseout = e => {
+    e.target.style.textDecoration = "unset"
+};
 
 // 通知内にあるユーザ名またはアイコンの要素一覧を取得
 const elements = document.querySelectorAll(".notification .notification_actionWrapper span.bold:first-child, .notification .notification_icon img");
@@ -30,7 +34,7 @@ const elements = document.querySelectorAll(".notification .notification_actionWr
 // 要素それぞれにリンクを設定する
 elements.forEach(element => {
     element.addEventListener("click", handleClick);
-    element.addEventListener("auxclick", handleAuxClick);
+    element.addEventListener("auxclick", handleAuxclick);
     element.addEventListener("mouseover", handleMouseover);
     element.addEventListener("mouseout", handleMouseout);
 });
